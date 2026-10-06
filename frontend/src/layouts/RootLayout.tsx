@@ -23,14 +23,14 @@ export default function RootLayout() {
     });
 
     const user = context?.user;
-
-    if (!user || !user?.roles.includes("admin")) {
-        return (
-            <div className="flex h-screen w-screen items-center justify-center">
-                <h1 className="text-2xl font-bold">Under construction.</h1>
-            </div>
-        );
-    }
+    console.log(user);
+    // if (!user || !user?.roles.includes("admin")) {
+    //     return (
+    //         <div className="flex h-screen w-screen items-center justify-center">
+    //             <h1 className="text-2xl font-bold">Under construction.</h1>
+    //         </div>
+    //     );
+    // }
     return (
         <StrictMode>
             <Outlet />

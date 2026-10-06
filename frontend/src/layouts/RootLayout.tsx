@@ -23,7 +23,7 @@ export default function RootLayout() {
     });
 
     const user = context?.user;
-
+    console.log(user);
     // if (!user || !user?.roles.includes("admin")) {
     //     return (
     //         <div className="flex h-screen w-screen items-center justify-center">
